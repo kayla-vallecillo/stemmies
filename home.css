@@ -2,7 +2,6 @@ body {
     background-color: #1F2D57;
     color: #FEFAF1;
     font-family: openSauceFont;
-    
 }
 
 @font-face {
@@ -14,7 +13,7 @@ body {
     font-family: openSauceFont;
     src: url(OpenSauceSans-Bold.ttf);
     font-weight: bold;
-  }
+}
 
 .center-icon {
     width: 40%;
@@ -27,6 +26,7 @@ body {
 .nav {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .nav-link {
@@ -68,11 +68,6 @@ body {
     width: 100%;
 }
 
-.active {
-    opacity: 1;
-    
-  }
-
 .center-text {
     font-size: 32px;
     text-align: center;
@@ -99,25 +94,44 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-  }
-  
-  .footerstyle {
+}
+
+.footerstyle {
     text-align: center;
     margin: auto;
     color: #1F2D57;
-  }
-  
-  .fa {
+}
+
+.fa {
     color: #1F2D57;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-  }
+}
 
-  .center-blurb {
+.center-blurb {
     width: 60%;
     margin-left: 20%;
     font-size: 18px;
     margin-right: auto;
     text-align: center;
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subcontainer {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

@@ -19,6 +19,7 @@ body {
 .nav {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .nav-link {
@@ -58,10 +59,6 @@ body {
 
 .nav-link-ltr:hover::before {
     width: 100%;
-}
-
-.active {
-    opacity: 1;
 }
 
 .padding {
@@ -167,29 +164,61 @@ footer {
     cursor: pointer;
     margin: 5px;
 
-  }
-  
-  .button span {
+}
+
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  .button span:after {
+}
+
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     padding-right: 25px;
-  }
-  
-  .button:hover span:after {
+}
+
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subcontainer {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .left-text {
+        text-align: center;
+    }
+    .right-text {
+        text-align: center;
+    }
+
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
